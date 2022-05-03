@@ -20,9 +20,11 @@ def make_json(csvFilePath, jsonFilePath):
     with open(jsonFilePath, 'w', encoding='utf-8') as jsonf:
         jsonf.write(json.dumps(data, indent=4))
 
+    # Add comments
 
 if __name__ == '__main__':
     csvFilePath = r'D:\PycharmProjects\pythonProject\List_Of_Coutries_Currency.csv'
     jsonFilePath = r'D:\PycharmProjects\pythonProject\List_Of_Countries_Currency.json'
 
     make_json(csvFilePath, jsonFilePath)
+
